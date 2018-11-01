@@ -1,5 +1,5 @@
 demo-app.disarm.io {
-        root douma-app/dist
+        root disarm-app/dist
         rewrite / {
                 #regexp .*
                 #ext !.js, !.css, !.jpg, !.png, !.ico, !.ttf, !.geojson
