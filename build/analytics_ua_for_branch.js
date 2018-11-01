@@ -1,4 +1,4 @@
-const production_ua = 'UA-88844641-2'
+const production_ua = 'UA-88844641-4'
 const staging_ua = 'UA-88844641-3'
 
 module.exports = (gitRevisionPlugin) => {
