@@ -12,3 +12,4 @@ serve/
 .nyc_output
 
 static/instances
+access.log
