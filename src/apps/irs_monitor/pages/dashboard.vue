@@ -63,6 +63,7 @@
   import {filter_responses} from 'apps/irs_monitor/lib/filters'
   import {create_plan_from_all_geodata, get_planning_level_name} from 'lib/instance_data/spatial_hierarchy_helper'
   import cache from 'config/cache'
+  import {geodata_in_cache_and_valid} from 'lib/models/geodata/geodata.valid'
 
   //import { isEqual, get } from 'lodash'
 
