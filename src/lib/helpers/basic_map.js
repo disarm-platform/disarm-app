@@ -1,6 +1,6 @@
 import mapboxgl from 'mapbox-gl'
 import CONFIG from 'config/common'
-const outline = require('@/demo-app.outline.geojson')
+const outline = require('@/yland.outline.geojson')
 
 mapboxgl.accessToken = CONFIG.basemap.map_token
 

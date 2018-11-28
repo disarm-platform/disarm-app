@@ -1,4 +1,4 @@
-import locality_geodata from '../demo-app.locality.geojson'
+import locality_geodata from '../yland.locality.geojson'
 
 const cache = {
   geodata: {
