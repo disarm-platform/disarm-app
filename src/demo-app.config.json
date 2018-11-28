@@ -32,7 +32,7 @@
       },
       "table": {
         "chart_type": "table",
-        "bin_by": "location.selection.name",
+        "bin_by": "location.selection.id",
         "aggregation_names": [
           "structures sprayed",
           "structures sprayed %"
