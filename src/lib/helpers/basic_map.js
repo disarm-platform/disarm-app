@@ -31,7 +31,7 @@ const basic_map = (store) => {
 
   map.on('load', function () {
     map.addLayer({
-      'id': 'maine',
+      'id': 'outline',
       'type': 'fill',
       'source': {
         'type': 'geojson',
