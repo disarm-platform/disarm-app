@@ -65,6 +65,12 @@
         new_plan_name:''
       }
     },
+    computed: {
+      saving() {
+        console.log("Check if saving")
+        return false
+      },
+    },
     methods: {
       update(item) {
         this.$emit('update', item)
