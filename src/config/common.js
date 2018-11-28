@@ -54,11 +54,11 @@ export default {
   basemap: {
     // Middle of southern Africa, start point for zooming in
     default: {
-      style: 'mapbox://styles/mapbox/streets-v9',
-      coords: [22.63977015806131, -25.276453102086563],
-      zoom: 4
+      style: 'mapbox://styles/onlyjsmith/cj0kre65k002k2slaemj9yy0f',
+      coords: [33.84455246087134,-20.228122283366602],
+      zoom: 4.7
     },
-    map_token: 'pk.eyJ1Ijoibmljb2xhaWRhdmllcyIsImEiOiJjaXlhNWw1NnkwMDJoMndwMXlsaGo5NGJoIn0.T1wTBzV42MZ1O-2dy8SpOw'
+    map_token: 'pk.eyJ1Ijoib25seWpzbWl0aCIsImEiOiI3R0ZLVGtvIn0.jBTrIysdeJpFhe8s1M_JgA'
   },
   instances: {
     list: ['foci', 'struc_demo', 'make', 'bwa', 'nam', 'swz', 'zwe-mats', 'zwe-matn', 'rsa', 'mwi-schisto', 'moz-gbm'],

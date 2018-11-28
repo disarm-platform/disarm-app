@@ -1,8 +1,8 @@
-import localidad_geodata from '../demo-app.localidad.geojson'
+import locality_geodata from '../demo-app.locality.geojson'
 
 const cache = {
   geodata: {
-    localidad: localidad_geodata
+    locality: locality_geodata
   },
 }
 // TODO: @debug Remove this global when we no longer need our training wheels

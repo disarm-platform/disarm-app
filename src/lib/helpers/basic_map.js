@@ -1,5 +1,6 @@
 import mapboxgl from 'mapbox-gl'
 import CONFIG from 'config/common'
+const outline = require('@/demo-app.outline.geojson')
 
 mapboxgl.accessToken = CONFIG.basemap.map_token
 
@@ -23,7 +24,25 @@ const basic_map = (store) => {
   map.on('error', (e) => {
     console.warn('🗺 Basic map error:', e)
     if (e.error) console.log(e.error)
-    if (store) store.commit('root:set_snackbar', {message: 'Problem with map data'})
+    if (store) store.commit('root:set_snackbar', {
+      message: 'Problem with map data'
+    })
+  })
+
+  map.on('load', function () {
+    map.addLayer({
+      'id': 'maine',
+      'type': 'fill',
+      'source': {
+        'type': 'geojson',
+        'data': outline,
+      },
+      'layout': {},
+      'paint': {
+        'fill-color': '#4CAF50',
+        'fill-opacity': 0.8
+      }
+    });
   })
 
   // not sure
@@ -32,4 +51,6 @@ const basic_map = (store) => {
   return map
 }
 
-export {basic_map}
+export {
+  basic_map
+}
