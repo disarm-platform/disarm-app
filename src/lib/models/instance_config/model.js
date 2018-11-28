@@ -1,5 +1,5 @@
 import InstanceConfigLocal from './local'
-import config from '../../../demo-app.config.json'
+import config from '../../../yland.config.json'
 
 const local_config_db = new InstanceConfigLocal()
 
