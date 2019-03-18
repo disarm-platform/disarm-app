@@ -1,6 +1,8 @@
 import {get} from 'lodash'
 
 export function filter_responses(responses, filters = []) {
+  console.log("Let's take a look at the filters here... What happens if you have two spatial filters?")
+  debugger
   if (filters.length === 0) return responses
 
   const filter_fn = compose_filter_function(filters)

@@ -69,6 +69,7 @@
       }
     },
     created() {
+      console.log("Somewhere in this component, we might be specifying only possible to have a single spatial filter.")
       this._all_locations = get_record_location_selection()
     },
     methods: {
