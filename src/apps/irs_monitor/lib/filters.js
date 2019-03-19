@@ -1,8 +1,6 @@
 import {get} from 'lodash'
 
 export function filter_responses(responses, filters = []) {
-  console.log("Let's take a look at the filters here... What happens if you have two spatial filters?")
-  debugger
   if (filters.length === 0) return responses
 
   const filter_fn = compose_filter_function(filters)
@@ -21,10 +19,18 @@ export function filter_responses(responses, filters = []) {
 }
 
 function compose_filter_function(filters) {
-  const fns = filters.map(filter_function)
+  const is_spatial_function = f => f.name.includes('location.selection.category') || f.name.includes('location.selection.id')
+
+  const spatial_fns = filters.filter(is_spatial_function).map(filter_function)
+  const other_fns = filters.filter(f => !is_spatial_function(f)).map(filter_function)
 
   return (response) => {
-    return fns.every(fn => {
+
+    // fns.some creates an OR query: needed for spatial filters
+    // fns.every creates an AND query: needed for everything apart from spatial filters
+    return other_fns.every(fn => {
+      return fn.call(this, response)
+    }) && spatial_fns.some(fn => {
       return fn.call(this, response)
     })
   }
