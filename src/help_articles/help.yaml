@@ -12,7 +12,7 @@
   articles: !include ./_irs_monitor
 - section_title: IRS Record
   articles: !include ./_irs_record
-- section_title: Form builder
-  articles: !include ./_form_builder
+- section_title: FAQs
+  articles: !include ./_faqs
 
 

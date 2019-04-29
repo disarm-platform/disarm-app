@@ -1,0 +1,3 @@
+- title: GPS accuracy 
+  content: > 
+    The GPS accuracy is recorded and synced with the form record, it is shown next to the GPS coordinates on the page that requires that you get your GPS location (data collector).
