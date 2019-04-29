@@ -1,3 +1,63 @@
+- title: How can I report if something is broken?
+  content: >
+    - If during an active season, send a WhatsApp message to the number stated in the help file of your DiSARM instance (not available in all instances).
+    - You can send an email to help@disarm.io.
+    - Create an issue on our github plartfrom found on this link: https://github.com/disarm-platform/user-requests-and-feedback 
+
+- title: I have forgotten my username or password.
+  content: >
+    Contact the application administrator.
+
+- title: Can I edit records after I've synced?
+  content: >
+    It's only possible to edit records before you sync. At the moment, after they're synced you will need to ask your application administrator if they have the possibility to do so. 
+
+- title: Can I collect data without being logged in?
+  content: >
+It is not possible yet to collect records without logging in. The application administrator needs to give a user read and write permissions to access certain parts of the application, in this case the IRS record module. 
+
+- title: My application has stopped working. What should I do?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+  Content: >
+    - Reloading the page often helps. 
+    Reloading the page is done by dragging from the top  of the screen to the bottom with your finger. 
+    - Exiting the browser and opening it again also helps. For more information check the “reset offline” section of this document.  
+    - ‘Killing’ the application if running on a mobile device
+    Killing the application is done by pressing the overview button and then swipping left or right, depending on your device to stop open applications from running in the background.
+
+- title: What do I do if my application is not opening/loading at all?
+  content: >
+  This is usually due to a network problem and can be solved in many ways:
+    - Switch from Wi-Fi to mobile data network
+    - If already on mobile data you can try turning on the data saver in the settings page. On Google Chrome you go to the three dot options button on the top right corner of the screen, go to settings, then go to data saver which is under the advanced tab on the settings page. After clicking on data saver there should be an on/off switch on the top left corner which will change state when touched between on and off. Turn it on and  reload DiSARM
+    - If the user has access to a Virtual Private Network, connecting through it helps too.  The VPN is useful for sending your network request like it is coming from a different location so that DiSARM loads in your country. 
+    - Domain Name Server (DNS) address 1.1.1.1 also helps in making DiSARM load up well. 
+    - Check the “reset offline” section on this document
+
+- title: Where does my data get saved?
+  content: >
+    DiSARM application data is first stored on the data collectors device. No one else can see it unless they have physical access to the device. Once the user syncs their device, this data will be sent to the server where their DiSARM instance is set up to store data.
+    Users can choose to hst the application on their server should they be worried about where the physical server that hosts their data is.
+
+- title: What happens to old versions of a plan?
+  content: >
+    When saving the plan the user must not click on the update button next to the plan if they still want to see that specific version of the plan. When creating a new plan the user must give a new name to this plan and not update the existing on inorder to keep it saved in the database.  
+
+- title: How can I view an existing plan?
+  content: >
+    The user can go to the “Planner Module”, click the “Options” icon, and select “Load Plan”. The application will display a list of names of the existing plans. Click on a plan to load it on the map for viewing.
+
+- title: Who can see my data?
+  content: >
+    No one has access to the data aside from users who have permissions or rights to use the dashboard/monitor module. These permissions and rights are set up by the application administrator. 
+
+- title: Offline functionality
+  content: >
+    The main part of the application designed to work offline is the data collection. Other parts of the application may work offline, however these are not fully functional.
+
+- title: Data usage
+  content:
+    DiSARM is designed to use the smallest possible amount of data. When possible, base files are only downloaded once. For the simplest use (access to the IRS Record module), we only need to download the application, which is less than 2 Mb.
+
 - title: GPS accuracy 
-  content: > 
-    The GPS accuracy is recorded and synced with the form record, it is shown next to the GPS coordinates on the page that requires that you get your GPS location (data collector).
+  content:
+The GPS accuracy is recorded and synced with the form record, it is shown next to the GPS coordinates on the page that requires that you get your GPS location (data collector).
