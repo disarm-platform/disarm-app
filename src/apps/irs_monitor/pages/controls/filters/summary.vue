@@ -1,10 +1,13 @@
 <template>
-    <div v-if="filters.length" class="filters-summary">
-        <h4>Active filters</h4>
-        <md-chip v-for="({name, comparator, value}, index) in formatted_filters" :key="index" md-deletable @delete="on_delete(filters[index])">
-            {{name}} {{comparator}} {{value}}
-        </md-chip>
-    </div>
+  <div v-if="filters.length" class="filters-summary">
+    <h4>
+      Active filters
+      <em class='note' v-if="includes_multiple_spatial_filters">Spatial filters combine with themselves using OR, all other filters use AND</em>
+    </h4>
+    <md-chip v-for="({name, comparator, value}, index) in formatted_filters" :key="index" md-deletable @delete="on_delete(filters[index])">
+      {{name}} {{comparator}} {{value}}
+    </md-chip>
+  </div>
 </template>
 
 <script>
@@ -28,6 +31,12 @@
 
           return f
         })
+      },
+      includes_multiple_spatial_filters() {
+        const spatial_filters = this.filters.filter(f => {
+          return f.name.includes('location.selection.category') || f.name.includes('location.selection.id')
+        })
+        return spatial_filters && spatial_filters.length > 1
       }
     },
     methods: {
@@ -48,5 +57,8 @@
     padding-bottom: 16px;
     margin-bottom: -24px;
     padding-top: 7px;
+  }
+  .note {
+    color: orange;
   }
 </style>

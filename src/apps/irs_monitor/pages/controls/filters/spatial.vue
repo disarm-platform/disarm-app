@@ -1,10 +1,8 @@
 <template>
   <div class="spatial-container">
-    <span v-if="area_filter_set">Spatial filter already set. Please remove the spatial filter before adding a new one.</span>
 
     <multiselect
             class="multiselect"
-            :disabled="area_filter_set"
             v-model="area"
             :options="categories"
             placeholder="Select area"
@@ -15,7 +13,7 @@
 
     <multiselect
             class="multiselect"
-            :disabled="!area || area_filter_set"
+            :disabled="!area"
             v-model="sub_area"
             :options="location_options"
             placeholder="Select sub-area"
@@ -26,7 +24,7 @@
       <span slot="noResult">Oops! No elements found. Consider changing the search query.</span>
     </multiselect>
 
-    <md-button @click="add_filter" :disabled="!area || area_filter_set">Add filter</md-button>
+    <md-button @click="add_filter" :disabled="!area">Add filter</md-button>
 
   </div>
 </template>
@@ -62,13 +60,9 @@
 
         return filtered_sub_areas.sort((a, b) => a.name.localeCompare(b.name))
       },
-
-
-      area_filter_set() {
-        return this.filters.some(f => f.name.includes('location.selection.category') || f.name.includes('location.selection.id'))
-      }
     },
     created() {
+      console.log("Somewhere in this component, we might be specifying only possible to have a single spatial filter.")
       this._all_locations = get_record_location_selection()
     },
     methods: {
