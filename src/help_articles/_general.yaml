@@ -6,11 +6,16 @@
   content: >
     ***Mobile Phones***
     Operating System must be Android or IOS
+
     Browser must be Google Chrome from version 40 upwards
+
     ***Computers***
     Operating System must be Windows or Mac
+
     Browser must be Google Chrome from version from version 40 upwards
-    Note Although other browsers my work, we recommend using google chrome as Chrome is fully supported. Other functions may not work well on other browsers. 
+
+    Note Although other browsers my work, we recommend using google chrome as Chrome is fully supported. Other functions may not work well on other browsers.
+     
 
 - title: Reloading and updating
   content: >
