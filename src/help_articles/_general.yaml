@@ -1,10 +1,16 @@
 - title:  What is DiSARM?
   content: >
-    The Disease Surveillance and Risk Monitoring platform (DiSARM) is a spatial intelligence tool, built to enable disease control programs to deliver more effective field campaigns. More information is available on the project’s website.Find out more at disarm.io
+    The Disease Surveillance and Risk Monitoring platform (DiSARM) is a spatial intelligence tool, built to enable disease control programs to deliver more effective field campaigns. More information is available on the project’s website. Find out more at disarm.io
 
 - title:  What do I need to run DiSARM?
   content: >
-    An android or Apple device that can run Google Chrome version 40 upwards.
+    ***Mobile Phones***
+    Operating System must be Android or IOS
+    Browser must be Google Chrome from version 40 upwards
+    ***Computers***
+    Operating System must be Windows or Mac
+    Browser must be Google Chrome from version from version 40 upwards
+    Note Although other browsers my work, we recommend using google chrome as Chrome is fully supported. Other functions may not work well on other browsers. 
 
 - title: Reloading and updating
   content: >
