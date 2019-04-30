@@ -3,20 +3,35 @@
     To begin entering data into the DiSARM application:  
 
     1. Select the appropriate module from the User Page or Sidebar. When you visit the data collection module you will be presented with a page that shows two icons on the top left; one is marked with a plus sign and the other with three vertical dots. The one marked with a plus is for adding new records while the one shows a list of options.
+    
     2. To add a new record, click the + sign in the top left corner and you can begin filling a form for the record you are collecting.
+    
     3. The meta data page, which is the first page of the record collection form, might be configured to be displayed or not displayed by your application administrator, but if it is shown it has fields that are optional. Some of them can be changed and some cannot be changed, this depends on the settings applied by your application administrator. The default set up of the meta data page displays the username of the logged in user, their user ID, a time stamp or record collection and the team name the user belongs to.
+    
     4. The next page is the location selection, and it generally has a button marked “get/update location” for getting GPS coordinates, drop down selections for choosing the area where the record is and an option to add a custom location.
+    
     5. To collect the GPS coordinates of your location you click on the “GET/UPDATE POINT LOCATION”
+    
     6. To set the name of the admin location as provided in the geodata you click on the “locality dropdown”. As shown in the image below, the higher level (first location selection) is optional in this case because the lower level locality is the part of the higher level level one (it is an area inside the region). The name shown on the areas might be different, it depends on the names given by the application administrator and the geodata. 
+    
     7. If the location you are looking for is not shown in the locality dropdown you can add a custom by clicking on the “Enter custom location” checkbox. A pop up message will ask you to confirm that you want to add a custom location and if you are sure you nac click on “USE CUSTOM LOCATION”. The downside with adding a custom location is that it will not be shown on the dashboard.
+    
     8. To continue adding the custom location select the text field labeled “custom location’ and type the name of the location that you want to add if you did not find it on the location dropdown shown on step 6 of this section. 
+    
     9. While adding the records (filling in the form) if you miss a required field or put in a invalid value errors will be shown at the top of the screen on any page of the form. 
+    
     10. When you click on the button you will be shown where the errors are. For example if the user forgot to get the GPS coordinates of the location, there would be an error message and some red text in the same line as the error message which when clicked will make the erratic part be displayed below the error messages for the user  to fix them instantly. 
+    
     11. To continue filling in the form use the buttons at the bottom to navigate through the pages of the form until you rich the last page which will have the navigation buttons labeled previous and complete. Once the form is filled in with required data standards the “complete” button will be activated. All it does is save the complete form to your device only. 
+    
     12. When you click it you will be brought back to the main page of the data Data Collection/IRS Record that is shown on the first step of this section. The difference is that it will display the list of records that you have collected. When you have finished collecting records, the next step would be to sync the records. Syncing in our context means sending the records to the main database so that they can be downloaded by users who have access to the dashboard to view spray campaign progress, for this reason you have to be connected to the internet to be able to sync.
+    
     13. If you click on a record before you have synced them you will be able to edit it. You can change any of the fields that you were able to input data into while collecting the record for the first time. So when you select one record you will be taken to the screen shown in step 3 only with the data already filled in on all pages but editable. Otherwise the next step is to either sync the records or export the so you can have them on your device as a json file. These two options can be displayed by clicking on the three vertical dots button that is found next to the button marked +.
+    
     14. The option to sync or export the data is not active/usable unless you have records that need to be synced or exported. Once the records have been synced the applications pops up a message at the top of the screen stating how many records were synced. This helps in case the was a network problem while syncing you will know not all were uploaded. They will not be lost, the user just needs to sync the remaining records. 
+    
     15. You can filter through the records using one of the values from form fields from the data collector form. This field is selected configured by your application administrator. This is used when you want to view a specific record. Viewing records can be done even after syncing. Instead of editing records, once they are synced you will only be able to view them. 
+    
     16. If the user wishes to have the records saved on an external json file on the mobile device; “export unsynced ” should be clicked. The app will instantly compile the json file and start the download. A notification will be shown in the notifications area at the top and a pop up at the bottom.
 
     NOTE After syncing you will not be able to not be edit the records and you will not be able to export a json file of the records. If you want to get records you will be able to download them from the dashboard/monitor if you have permission to access it. It is still possible to view records by clicking on them.
