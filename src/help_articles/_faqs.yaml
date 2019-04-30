@@ -14,7 +14,7 @@
 
 - title: Can I collect data without being logged in?
   content: >
-It is not possible yet to collect records without logging in. The application administrator needs to give a user read and write permissions to access certain parts of the application, in this case the IRS record module. 
+    It is not possible yet to collect records without logging in. The application administrator needs to give a user read and write permissions to access certain parts of the application, in this case the IRS record module. 
 
 - title: My application has stopped working. What should I do?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
   Content: >
@@ -60,4 +60,4 @@ It is not possible yet to collect records without logging in. The application ad
 
 - title: GPS accuracy 
   content:
-The GPS accuracy is recorded and synced with the form record, it is shown next to the GPS coordinates on the page that requires that you get your GPS location (data collector).
+    The GPS accuracy is recorded and synced with the form record, it is shown next to the GPS coordinates on the page that requires that you get your GPS location (data collector).

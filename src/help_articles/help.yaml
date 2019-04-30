@@ -1,8 +1,8 @@
 # Help sections
 
-# NOTE: If you're editing any of the 'included' help files on a development server, you
-# will need to re-save THIS file in order to reload the changes
-# - webpack doesn't seem to watch the included files.
+# NOTE: If you're editing any of the 'included' help files on a
+# development server, you will need to re-save THIS file in order
+# to reload the changes webpack doesn't seem to watch the included files.
 
 - section_title: General
   articles: !include ./_general

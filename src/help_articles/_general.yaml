@@ -12,7 +12,7 @@
 
 - title: Log-in
   content: >
-  Once the login page has been displayed insert your username in the username textfield and the password in the password labeled textfield. If it is required to change the API URL click on the button labeled “EDIT API URL” found on the bottom left corner of the login page. A text field with a URL will be unveiled and this should be edited to be the correct API URL provided by your application administrator. Click on the red button labeled “LOGIN”. The login button becomes red (activated) which means it can be used to log in once login details have been entered in the text fields. If the login details are wrong you will be shown a message in red saying “User with this login or password is not found”. Once you are logged in you will see a menu of the parts or modules of the application that you are allowed to access. The permission to access modules is given by the application administrator in the admin configuration editor section. 
+    Once the login page has been displayed insert your username in the username textfield and the password in the password labeled textfield. If it is required to change the API URL click on the button labeled “EDIT API URL” found on the bottom left corner of the login page. A text field with a URL will be unveiled and this should be edited to be the correct API URL provided by your application administrator. Click on the red button labeled “LOGIN”. The login button becomes red (activated) which means it can be used to log in once login details have been entered in the text fields. If the login details are wrong you will be shown a message in red saying “User with this login or password is not found”. Once you are logged in you will see a menu of the parts or modules of the application that you are allowed to access. The permission to access modules is given by the application administrator in the admin configuration editor section.
 
 - title: Log-out
   content: >
@@ -21,13 +21,13 @@
 
 - title: User Page
   content: >
-    The first page you will see after clicking the “login”After logging button is the User Page. It  lists the sections of the application you are allowed to access pre-selected by your application administrator. These sections are sometimes referred to as modules and a user who has full access will have: 
-
-    IRS Monitor
-    IRS Plan
-    IRS Record
-    Debug 
-    Geodata 
+    The first page you will see after clicking the “login” is the User Page. It  lists the sections of the application you are allowed to access pre-selected by your application administrator. These sections are sometimes referred to as modules and a user who has full access will have
+    
+    - IRS Monitor
+    - IRS Plan
+    - IRS Record
+    - Debug 
+    - Geodata 
 
     NOTE Some application modules will have customized names and a higher or smaller number of modules based on the configuration of your application administrator. 
 
@@ -35,7 +35,8 @@
 
 - title: Sidebar
   content: >
-    - After logging into the DiSARM application, you can view your modules in the sidebar if not on the user page. To open the Sidebar, click the sandwich icon (three small horizontal lines icon) on the top left corner of the screen and the sidebar will slide out from the left edge of your screen. 
+    After logging into the DiSARM application, you can view your modules in the sidebar if not on the user page. To open the Sidebar, click the sandwich icon (three small horizontal lines icon) on the top left corner of the screen and the sidebar will slide out from the left edge of your screen. 
+    
     - The SideBar will display the following information;
     - Title given to you DiSARM application 
     - Version of the DiSARM application being used
@@ -51,7 +52,8 @@
     In the unlikely event that the application stops working, please reload the application. If it is still not working there is a function to reset it by selecting the “Reset Offline” option under the DiSARM logo that is shown when there application is loading/opening.
     NOTE Although you will be resetting the application offline, the application will not delete any data that you have already collected and saved to your device in the IRS Record module. 
     After selecting the “reset offline” option you will be presented with a screen informing you “you will not lose any data, click the button labeled “reset offline mode”
-    The  reset offline page can also be reached by editing the URL in the address bar. You have to change it to URL-given-to-access-disarm/reset.html
+    The reset offline page can also be reached by editing the URL in the address bar. You have to change it to URL-given-to-access-disarm/reset.html
     In other words you add /reset.html to the end of your URL. The first character there is a forward slash(/). In our public demo application it would be https://demo-app.disarm.io/reset.html
     Once resetting offline is completed, you see a message stating “offline mode was reset successfully”. Click the “Restart Application” button to start using the application.
-    NOTE The “restart application” button will bring you back to the Login page which means resetting the application will log you out. Make sure to do it if you are not using the application offline (if you have network) to log back in as it is not possible to log in if you do not have network. 
+    NOTE The “restart application” button will bring you back to the Login page which means resetting the application will log you out. Make sure to do it if you are not using the application offline (if you have network) to log back in as it is not possible to log in if you do not have network.
+    
