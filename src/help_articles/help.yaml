@@ -6,13 +6,7 @@
 
 - section_title: General
   articles: !include ./_general
-- section_title: IRS Plan
-  articles: !include ./_irs_plan
-- section_title: IRS Monitor
-  articles: !include ./_irs_monitor
 - section_title: IRS Record
   articles: !include ./_irs_record
 - section_title: FAQs
   articles: !include ./_faqs
-
-
