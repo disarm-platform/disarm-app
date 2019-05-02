@@ -25,17 +25,22 @@
     Reloading the page is done by dragging from the top  of the screen to the bottom with your finger. 
 
     - Exiting the browser and opening it again also helps. For more information check the “reset offline” section of this document.  
-    
+
     - ‘Killing’ the application if running on a mobile device
     Killing the application is done by pressing the overview button and then swipping left or right, depending on your device to stop open applications from running in the background.
 
 - title: What do I do if my application is not opening/loading at all?
   content: >
-  This is usually due to a network problem and can be solved in many ways:
+    This is usually due to a network problem and can be solved in many ways:
+
     - Switch from Wi-Fi to mobile data network
+
     - If already on mobile data you can try turning on the data saver in the settings page. On Google Chrome you go to the three dot options button on the top right corner of the screen, go to settings, then go to data saver which is under the advanced tab on the settings page. After clicking on data saver there should be an on/off switch on the top left corner which will change state when touched between on and off. Turn it on and  reload DiSARM
+    
     - If the user has access to a Virtual Private Network, connecting through it helps too.  The VPN is useful for sending your network request like it is coming from a different location so that DiSARM loads in your country. 
+    
     - Domain Name Server (DNS) address 1.1.1.1 also helps in making DiSARM load up well. 
+    
     - Check the “reset offline” section on this document
 
 - title: Where does my data get saved?
