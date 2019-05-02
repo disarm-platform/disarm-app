@@ -37,9 +37,13 @@
     The first page you will see after clicking the “login” is the User Page. It  lists the sections of the application you are allowed to access pre-selected by your application administrator. These sections are sometimes referred to as modules and a user who has full access will have
     
     - IRS Monitor
+
     - IRS Plan
+
     - IRS Record
+
     - Debug 
+
     - Geodata 
 
     NOTE Some application modules will have customized names and a higher or smaller number of modules based on the configuration of your application administrator. 
@@ -51,13 +55,21 @@
     After logging into the DiSARM application, you can view your modules in the sidebar if not on the user page. To open the Sidebar, click the sandwich icon (three small horizontal lines icon) on the top left corner of the screen and the sidebar will slide out from the left edge of your screen. 
     
     - The SideBar will display the following information;
+
     - Title given to you DiSARM application 
+    
     - Version of the DiSARM application being used
+    
     - Instance ID (also referred to as testing ID is set during log in so that testing data and settings are not saved with real data) not always there
+    
     - Modules made available by your application administrator
+    
     - User Page navigation option
+    
     - Help option
+    
     - Logout option
+    
     The sidebar can be closed by clicking anywhere outside of the Sidebar area. 
 
 - title: Reset offline
