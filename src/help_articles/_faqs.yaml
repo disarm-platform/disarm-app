@@ -1,7 +1,9 @@
 - title: How can I report if something is broken?
   content: >
     - If during an active season, send a WhatsApp message to the number stated in the help file of your DiSARM instance (not available in all instances).
+
     - You can send an email to help@disarm.io.
+
     - Create an issue on our github plartfrom found on this link: https://github.com/disarm-platform/user-requests-and-feedback 
 
 - title: I have forgotten my username or password.
@@ -19,8 +21,11 @@
 - title: My application has stopped working. What should I do?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
   Content: >
     - Reloading the page often helps. 
+
     Reloading the page is done by dragging from the top  of the screen to the bottom with your finger. 
+
     - Exiting the browser and opening it again also helps. For more information check the “reset offline” section of this document.  
+    
     - ‘Killing’ the application if running on a mobile device
     Killing the application is done by pressing the overview button and then swipping left or right, depending on your device to stop open applications from running in the background.
 
