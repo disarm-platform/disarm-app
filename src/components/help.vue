@@ -1,14 +1,17 @@
 <template>
   <keep-alive>
     <md-dialog ref="help" class="help">
-      <md-dialog-title>Help</md-dialog-title>
+      <div class='help-header'>
+        <h1 class='help-header-text'>Help</h1>
+        <span class='link-to-top'><a href="#top">top</a></span>
+      </div>
 
       <md-dialog-content>
         <a v-if='support_chat_link' :href="support_chat_link" class="no-underline" target="_blank">
           <md-icon>chat</md-icon>
           Start WhatsApp support chat
         </a>
-
+        <a id='top'></a>
         <div v-if="toc">
           <h2>Contents</h2>
           <div v-html='toc'></div>
@@ -83,5 +86,18 @@
 
   .no-underline:hover {
     text-decoration: none !important;
+  }
+
+  .help-header {
+    padding: 10px 24px;
+  }
+
+  .help-header-text {
+    float: left;
+  }
+
+  .link-to-top {
+    float: right;
+    font-size: 0.9em;
   }
 </style>
