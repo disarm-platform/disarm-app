@@ -5,33 +5,28 @@ The Disease Surveillance and Risk Monitoring platform (DiSARM) is a spatial inte
 
 ### What do I need to run DiSARM?
 
-**Mobile Phones**
+*Mobile Phones*
+- Operating System must be Android or IOS
+- Browser must be Google Chrome from version 40 upwards
 
-Operating System must be Android or IOS
+*Computers*
+- Browser must be Google Chrome from version from version 40 upwards
 
-Browser must be Google Chrome from version 40 upwards
-
-**Computers**
-
-Operating System must be Windows or Mac
-
-Browser must be Google Chrome from version from version 40 upwards
-
-Note Although other browsers my work, we recommend using google chrome as Chrome is fully supported. Other functions may not work well on other browsers.
+**g** Although other browsers my work, we recommend using google chrome as Chrome is fully supported. Other functions may not work well on other browsers.
      
 
 ### How do I reload and/or update the application?
 
-DiSARM is designed to run offline in a robust way that protects your data. In general, you can try reloading any page that looks like it's stuck loading (click the reload button on your browser). If you're editing a form, you may lose your entry unless you save first by completing the form. If DISARM is online, it will check to see if there's a new version available. If there is, it will download and update in the background, letting you know when it's ready. Sometimes (due to a slow connection or other issue), the update doesn't work. If things get stuck on a desktop browser, you can try a "force reload", which is ctrl+shift+r on Windows (cmd+shift+r on Mac). This will try to re-download the required application files and start up again. Your data (except unsaved forms) will not be removed.
+DiSARM is designed to run offline in a robust way that protects your data. In general, you can try reloading any page that looks like it's stuck loading (click the reload button on your browser). If you're editing a form, you may lose your entry unless you save first by completing the form. If DISARM is online, it will check to see if there's a new version available. If there is, it will download and update in the background, letting you know when it's ready. Sometimes (due to a slow connection or other issue), the update doesn't work. If things get stuck on a desktop browser, you can try a "force reload", which is `ctrl+shift+r` on Windows (`cmd+shift+r` on Mac). This will try to re-download the required application files and start up again. Your data (except unsaved forms) will not be removed.
 
 ### How do I log-in?
 
-Once the login page has been displayed insert your username in the username textfield and the password in the password labeled textfield. If it is required to change the API URL click on the button labeled “EDIT API URL” found on the bottom left corner of the login page. A text field with a URL will be unveiled and this should be edited to be the correct API URL provided by your application administrator. Click on the red button labeled “LOGIN”. The login button becomes red (activated) which means it can be used to log in once login details have been entered in the text fields. If the login details are wrong you will be shown a message in red saying “User with this login or password is not found”. Once you are logged in you will see a menu of the parts or modules of the application that you are allowed to access. The permission to access modules is given by the application administrator in the admin configuration editor section.
+Once the login page has been displayed insert your username in the username textfield and the password in the password labeled textfield. If it is required to change the API URL click on the button labeled `EDIT API URL` found on the bottom left corner of the login page. A text field with a URL will be unveiled and this should be edited to be the correct API URL provided by your application administrator. Click on the red button labeled `LOGIN`. The login button becomes red (activated) which means it can be used to log in once login details have been entered in the text fields. If the login details are wrong you will be shown a message in red saying “User with this login or password is not found”. Once you are logged in you will see a menu of the parts or modules of the application that you are allowed to access. The permission to access modules is given by the application administrator in the admin configuration editor section.
 
 ### How do I log-out?
 
 Open the sidebar by using the sandwich button on the top right corner of the screen and click on the "Return to launcher" from the options presented. On the launcher page the user can then click the "log out” button that is below the list of instances to log out. 
-NOTE if you log out while you are offline, you won't be able to use DiSARM again until you login (which you can only do if you're online).
+**NOTE** if you log out while you are offline, you won't be able to use DiSARM again until you login (which you can only do if you're online).
 
 ### What's the User Page?
 
@@ -47,7 +42,7 @@ The first page you will see after clicking the “login” is the User Page. It 
 
 - Geodata 
 
-NOTE Some application modules will have customized names and a higher or smaller number of modules based on the configuration of your application administrator. 
+**NOTE** Some application modules will have customized names and a higher or smaller number of modules based on the configuration of your application administrator. 
 
 Below the list of modules there is some text showing your application version number. When clicked it displays the version number of your configuration and some more device information that includes your browser name, version, operating system and your device name. This information is useful for troubleshooting in case of bugs that are experienced only on your device.
 
@@ -200,4 +195,4 @@ To begin entering data into the DiSARM application:
 
 16. If the user wishes to have the records saved on an external json file on the mobile device; “export unsynced ” should be clicked. The app will instantly compile the json file and start the download. A notification will be shown in the notifications area at the top and a pop up at the bottom.
 
-NOTE After syncing you will not be able to not be edit the records and you will not be able to export a json file of the records. If you want to get records you will be able to download them from the dashboard/monitor if you have permission to access it. It is still possible to view records by clicking on them.
+**NOTE** After syncing you will not be able to not be edit the records and you will not be able to export a json file of the records. If you want to get records you will be able to download them from the dashboard/monitor if you have permission to access it. It is still possible to view records by clicking on them.
