@@ -9,7 +9,12 @@
           Start WhatsApp support chat
         </a>
 
-        <div v-html='markdown_content'></div>
+        <div v-if="toc">
+          <h2>Contents</h2>
+          <div v-html='toc'></div>
+        </div>
+
+        <div id='help-content' v-html='markdown_content'></div>
 
       </md-dialog-content>
 
@@ -30,6 +35,7 @@
     data() {
       return {
         markdown_content,
+        toc: '',
       }
     },
     computed: {
@@ -37,14 +43,24 @@
         const support_number = get(this.$store, 'state.instance_config.instance.support_number', false)
         if (!support_number) return false
         return `https://wa.me/${support_number}`
-      }
+      },
     },
     mounted() {
       this.$root.$on('help:show', () => this.$refs.help.open())
+      this.toc = this.generate_toc()
     },
     methods: {
       close_help() {
         this.$refs.help.close()
+      },
+      generate_toc() {
+        let toc = ''
+        const a_template = (({id, text}) => `<p><a href='#${id}'>${text}</a></p>`)
+        const all_help_headings = document.querySelectorAll("#help-content > h3")
+
+        all_help_headings.forEach(i => toc += a_template({id: i.id, text: i.innerText}))
+
+        return toc
       },
     }
   }
