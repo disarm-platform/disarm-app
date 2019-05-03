@@ -1,5 +1,6 @@
 ## Frequently Asked Questions (FAQs)
 
+
 ### What is DiSARM?
 The Disease Surveillance and Risk Monitoring platform (DiSARM) is a spatial intelligence tool, built to enable disease control programs to deliver more effective field campaigns. More information is available on the project’s website. Find out more at disarm.io
 
@@ -12,7 +13,7 @@ The Disease Surveillance and Risk Monitoring platform (DiSARM) is a spatial inte
 *Computers*
 - Browser must be Google Chrome from version from version 40 upwards
 
-**g** Although other browsers my work, we recommend using google chrome as Chrome is fully supported. Other functions may not work well on other browsers.
+**NOTE** Although other browsers my work, we recommend using google chrome as Chrome is fully supported. Other functions may not work well on other browsers.
      
 
 ### How do I reload and/or update the application?
@@ -26,11 +27,11 @@ Once the login page has been displayed insert your username in the username text
 ### How do I log-out?
 
 Open the sidebar by using the sandwich button on the top right corner of the screen and click on the "Return to launcher" from the options presented. On the launcher page the user can then click the "log out” button that is below the list of instances to log out. 
-**NOTE** if you log out while you are offline, you won't be able to use DiSARM again until you login (which you can only do if you're online).
+**NOTE** if you log out while you are offline, you will not be able to use DiSARM again until you login (which you can only do if you're online).
 
 ### What's the User Page?
 
-The first page you will see after clicking the “login” is the User Page. It  lists the sections of the application you are allowed to access pre-selected by your application administrator. These sections are sometimes referred to as modules and a user who has full access will have
+The first page you will see after clicking the “login” button is the User Page. It  lists the sections of the application you are allowed to access pre-selected by your application administrator. These sections are sometimes referred to as modules and a user who has full access will have
 
 - IRS Monitor
 
@@ -50,13 +51,13 @@ Below the list of modules there is some text showing your application version nu
 
 After logging into the DiSARM application, you can view your modules in the sidebar if not on the user page. To open the Sidebar, click the sandwich icon (three small horizontal lines icon) on the top left corner of the screen and the sidebar will slide out from the left edge of your screen. 
 
-- The SideBar will display the following information;
+The SideBar will display the following information;
 
 - Title given to you DiSARM application 
 
 - Version of the DiSARM application being used
 
-- Instance ID (also referred to as testing ID is set during log in so that testing data and settings are not saved with real data) not always there
+- Instance ID (also referred to as testing ID is set during log in so that testing data and settings are not saved with real data). It is not displayed in some instances
 
 - Modules made available by your application administrator
 
@@ -86,19 +87,19 @@ Once resetting offline is completed, you see a message stating “offline mode w
 
 ### How can I report if something is broken?
 
-- If during an active season, send a WhatsApp message to the number stated in the help file of your DiSARM instance (not available in all instances).
+- During an active season you can send a WhatsApp message to the number stated in the help file of your DiSARM instance (not available in all instances).
 
 - You can send an email to help@disarm.io.
 
 - Create an issue on our github plartfrom found on this link: https://github.com/disarm-platform/user-requests-and-feedback 
 
-### I have forgotten my username or password.
+### What do I do when I have lost/forgotten my username or password?
 
 Contact the application administrator.
 
 ### Can I edit records after I've synced?
 
-It's only possible to edit records before you sync. At the moment, after they're synced you will need to ask your application administrator if they have the possibility to do so. 
+It is only possible to edit records before you sync. At the moment, after they are synced you will need to ask your application administrator if they have the possibility to do so. 
 
 ### Can I collect data without being logged in?
 
@@ -107,8 +108,7 @@ It is not possible yet to collect records without logging in. The application ad
 ### My application has stopped working. What should I do?
 
 - Reloading the page often helps. 
-
-Reloading the page is done by dragging from the top  of the screen to the bottom with your finger. 
+Reloading the page is done by dragging from the top  of the screen to the bottom with your finger on your mobile phone. 
 
 - Exiting the browser and opening it again also helps. For more information check the “reset offline” section of this document.  
 
@@ -133,7 +133,7 @@ This is usually due to a network problem and can be solved in many ways:
 
 DiSARM application data is first stored on the data collectors device. No one else can see it unless they have physical access to the device. Once the user syncs their device, this data will be sent to the server where their DiSARM instance is set up to store data.
     
-Users can choose to hst the application on their server should they be worried about where the physical server that hosts their data is.
+Users can choose to host the application on their server should they be worried about where the physical server that hosts their data is.
 
 ### What happens to old versions of a plan?
 
@@ -147,17 +147,17 @@ The user can go to the “Planner Module”, click the “Options” icon, and s
 
 No one has access to the data aside from users who have permissions or rights to use the dashboard/monitor module. These permissions and rights are set up by the application administrator. 
 
-### Offline functionality
+### Does the application work offline?
 
 The main part of the application designed to work offline is the data collection. Other parts of the application may work offline, however these are not fully functional.
 
-### Data usage
+### How much data does it use? 
 
 DiSARM is designed to use the smallest possible amount of data. When possible, base files are only downloaded once. For the simplest use (access to the IRS Record module), we only need to download the application, which is less than 2 Mb.
 
-### GPS accuracy 
+### How accurate are the collected GPS coordnates? 
 
-The GPS accuracy is recorded and synced with the form record, it is shown next to the GPS coordinates on the page that requires that you get your GPS location (data collector).
+The GPS accuracy is recorded and synced with the form record, it is shown next to the GPS coordinates on the page that requires that you get your GPS location (data collector) and the accuracy is influenced by the device hardware.
 
 ### How do I use IRS Record?
 
@@ -173,25 +173,25 @@ To begin entering data into the DiSARM application:
 
 5. To collect the GPS coordinates of your location you click on the “GET/UPDATE POINT LOCATION”
 
-6. To set the name of the admin location as provided in the geodata you click on the “locality dropdown”. As shown in the image below, the higher level (first location selection) is optional in this case because the lower level locality is the part of the higher level level one (it is an area inside the region). The name shown on the areas might be different, it depends on the names given by the application administrator and the geodata. 
+6. Then the next step is to select the location name from te list of locations. Most of the time the higher level (first location selection) is optional because the lower level locality is the part of the higher level one (it is an area inside the region). The name shown on the areas are the names given by the application administrator in the geodata. 
 
-7. If the location you are looking for is not shown in the locality dropdown you can add a custom by clicking on the “Enter custom location” checkbox. A pop up message will ask you to confirm that you want to add a custom location and if you are sure you nac click on “USE CUSTOM LOCATION”. The downside with adding a custom location is that it will not be shown on the dashboard.
+7. If the location you are looking for is not shown in the dropdown list given you can add a custom by clicking on the “Enter custom location” checkbox. A pop up message will ask you to confirm that you want to add a custom location and if you are sure you can click on “USE CUSTOM LOCATION”. The downside with adding a custom location is that it will not be shown on the dashboard.
 
-8. To continue adding the custom location select the text field labeled “custom location’ and type the name of the location that you want to add if you did not find it on the location dropdown shown on step 6 of this section. 
+8. To continue adding the custom location select the text field labeled “custom location’ and type the name of the location that you want to add if you did not find it on the location dropdown descibed on step 6 of this section. 
 
 9. While adding the records (filling in the form) if you miss a required field or put in a invalid value errors will be shown at the top of the screen on any page of the form. 
 
 10. When you click on the button you will be shown where the errors are. For example if the user forgot to get the GPS coordinates of the location, there would be an error message and some red text in the same line as the error message which when clicked will make the erratic part be displayed below the error messages for the user  to fix them instantly. 
 
-11. To continue filling in the form use the buttons at the bottom to navigate through the pages of the form until you rich the last page which will have the navigation buttons labeled previous and complete. Once the form is filled in with required data standards the “complete” button will be activated. All it does is save the complete form to your device only. 
+11. To continue filling in the form use the buttons at the bottom to navigate through the pages of the form until you reach the last page which will have the navigation buttons labeled previous and complete. Once the form is filled in with required data standards the “complete” button will be activated. All it does is save the complete form to your device only. 
 
 12. When you click it you will be brought back to the main page of the data Data Collection/IRS Record that is shown on the first step of this section. The difference is that it will display the list of records that you have collected. When you have finished collecting records, the next step would be to sync the records. Syncing in our context means sending the records to the main database so that they can be downloaded by users who have access to the dashboard to view spray campaign progress, for this reason you have to be connected to the internet to be able to sync.
 
-13. If you click on a record before you have synced them you will be able to edit it. You can change any of the fields that you were able to input data into while collecting the record for the first time. So when you select one record you will be taken to the screen shown in step 3 only with the data already filled in on all pages but editable. Otherwise the next step is to either sync the records or export the so you can have them on your device as a json file. These two options can be displayed by clicking on the three vertical dots button that is found next to the button marked +.
+13. If you click on a record before you have synced them you will be able to edit it. You can change any of the fields that you were able to input data into while collecting the record for the first time. So when you select one record you will be taken to the screen shown in step 3 only with the data already filled in on all pages but editable. Otherwise the next step is to either sync the records or export them so you can have them on your device as a json file. These two options can be displayed by clicking on the three vertical dots button that is found next to the button marked with a plus sign.
 
 14. The option to sync or export the data is not active/usable unless you have records that need to be synced or exported. Once the records have been synced the applications pops up a message at the top of the screen stating how many records were synced. This helps in case the was a network problem while syncing you will know not all were uploaded. They will not be lost, the user just needs to sync the remaining records. 
 
-15. You can filter through the records using one of the values from form fields from the data collector form. This field is selected configured by your application administrator. This is used when you want to view a specific record. Viewing records can be done even after syncing. Instead of editing records, once they are synced you will only be able to view them. 
+15. You can filter through the records using one of the values from form fields from the data collector form. This field is selected or configured by your application administrator. This is used when you want to view a specific record. Viewing records can be done even after syncing. Instead of editing records, once they are synced you will only be able to view them. 
 
 16. If the user wishes to have the records saved on an external json file on the mobile device; “export unsynced ” should be clicked. The app will instantly compile the json file and start the download. A notification will be shown in the notifications area at the top and a pop up at the bottom.
 
