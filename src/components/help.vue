@@ -1,35 +1,24 @@
 <template>
   <keep-alive>
     <md-dialog ref="help" class="help">
-      <md-dialog-title>Help</md-dialog-title>
+      <div class='help-header'>
+        <h1 class='help-header-text'>Help</h1>
+        <span class='link-to-top'><a href="#top">top</a></span>
+      </div>
 
       <md-dialog-content>
         <a v-if='support_chat_link' :href="support_chat_link" class="no-underline" target="_blank">
           <md-icon>chat</md-icon>
           Start WhatsApp support chat
         </a>
-
-        <md-input-container>
-          <label>Search</label>
-          <md-input v-model="search_term"></md-input>
-        </md-input-container>
-
-        <div class='section' v-for="section in sections" :key="section">
-          <h4>
-            {{section}}
-          </h4>
-          <div
-            class="item"
-            v-for="{title, image, content, show_excerpt} in items_for_section(section)"
-            :key="title"
-          >
-            <h5 v-if='show_excerpt' @click="toggle_show_excerpt(title, section)" class="item-header"><md-icon>expand_more</md-icon> {{title}}</h5>
-            <h5 v-if='!show_excerpt' @click="toggle_show_excerpt(title, section)" class="item-header"><md-icon>expand_less</md-icon> {{title}}</h5>
-            <div v-if="!show_excerpt" v-html="content"></div>
-            <img v-if="!show_excerpt && image" :src="`/static/help_images/${image}`">
-          </div>
-          <hr>
+        <a id='top'></a>
+        <div v-if="toc">
+          <h2>Contents</h2>
+          <div v-html='toc'></div>
         </div>
+
+        <div id='help-content' v-html='markdown_content'></div>
+
       </md-dialog-content>
 
       <md-dialog-actions>
@@ -40,92 +29,42 @@
 </template>
 
 <script>
-  import {mapState} from 'vuex'
-  import array_unique from 'array-unique'
   import {get} from 'lodash'
-  import Fuse from 'fuse.js'
-  import showdown from 'showdown'
 
-  const help_content = require("json-loader!yaml-include-loader!../help_articles/help.yaml")
+  const markdown_content = require('html-loader!markdown-loader!../help_articles/help.md')
 
   export default {
     name: 'help',
     data() {
       return {
-        search_term: '',
-        flat_help: []
+        markdown_content,
+        toc: '',
       }
     },
     computed: {
-      filtered_help_content() {
-        if (this.search_term === '') return this.flat_help
-
-        const options = {
-          shouldSort: true,
-          threshold: 0.4,
-          location: 0,
-          distance: 100,
-          maxPatternLength: 32,
-          minMatchCharLength: 2,
-          keys: [
-            {name: 'content', weight: 0.7},
-            {name: 'title', weight: 0.2},
-            {name: 'section_title', weight: 0.1}
-          ]
-        }
-        const fuse = new Fuse(this.flat_help, options)
-
-        return fuse.search(this.search_term)
-
-      },
-      sections() {
-        return array_unique(this.filtered_help_content.map(c => c.section_title))
-      },
       support_chat_link() {
         const support_number = get(this.$store, 'state.instance_config.instance.support_number', false)
         if (!support_number) return false
         return `https://wa.me/${support_number}`
-      }
-    },
-    created() {
-      this.prepare_help_items()
+      },
     },
     mounted() {
       this.$root.$on('help:show', () => this.$refs.help.open())
+      this.toc = this.generate_toc()
     },
     methods: {
       close_help() {
         this.$refs.help.close()
       },
+      generate_toc() {
+        let toc = ''
+        const a_template = (({id, text}) => `<p><a href='#${id}'>${text}</a></p>`)
+        const all_help_headings = document.querySelectorAll("#help-content > h3")
 
-      prepare_help_items() {
-        const converter = new showdown.Converter()
+        all_help_headings.forEach(i => toc += a_template({id: i.id, text: i.innerText}))
 
-        const section_titles = help_content.map(section => {
-          return section.section_title
-        })
-
-        section_titles.forEach(section_title => {
-          help_content.find(section => section.section_title === section_title).articles.forEach(article => {
-            article.content = converter.makeHtml(article.content)
-            article.section_title = section_title
-            article.show_excerpt = true
-            this.flat_help.push(article)
-          })
-        })
+        return toc
       },
-      items_for_section(section_title) {
-        return this.filtered_help_content.filter(c => c.section_title === section_title)
-      },
-      toggle_show_excerpt(title, section) {
-        const item = this.filtered_help_content.filter(item => {
-          return item.section_title == section && item.title == title
-        })[0]
-
-        if (item) {
-          item.show_excerpt = !item.show_excerpt
-        }
-      }
     }
   }
 </script>
@@ -135,21 +74,30 @@
     padding: 10px;
     width: 100%;
   }
-  .item-header {
-    cursor: pointer;
-  }
-  .item-header a {
-    cursor: pointer;
-  }
-</style>
 
-<style>
   .help > .md-dialog {
     min-width: 90%;
     height: 90%;
   }
 
+  .md-dialog p {
+    margin-bottom: 5px;
+  } 
+
   .no-underline:hover {
     text-decoration: none !important;
+  }
+
+  .help-header {
+    padding: 10px 24px;
+  }
+
+  .help-header-text {
+    float: left;
+  }
+
+  .link-to-top {
+    float: right;
+    font-size: 0.9em;
   }
 </style>
